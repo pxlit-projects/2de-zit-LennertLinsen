@@ -1,4 +1,4 @@
-# Fullstack Project Team NN
+# Fullstack Java Project Team NN
 
 ## Team members
 
@@ -7,7 +7,6 @@
 - Member 1
 - Member 2
 - Member 3
-- Member 4
 
 ## Folder structure
 
@@ -15,10 +14,8 @@
 - _architecture_: this folder contains documentation regarding the architecture of your system.
 - `docker-compose.yml` : to start the backend (starts all microservices)
 - _backend-java_: contains microservices written in java
-- _backend-net_: contains microservices written in C#
 - _demo-artifacts_: contains images, files, etc that are useful for demo purposes.
 - _frontend-web_: contains the Angular webclient
-- _frontend-app_: contains the mobile client written in MAUI
 
 Each folder contains its own specific `.gitignore` file.  
 **:warning: complete these files asap, so you don't litter your repository with binary build artifacts!**
