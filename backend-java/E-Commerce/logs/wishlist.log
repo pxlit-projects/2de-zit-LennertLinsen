@@ -1,0 +1,70 @@
+14:27:55.247 [main] INFO  b.p.s.WishlistServiceApplication - Starting WishlistServiceApplication using Java 17.0.1 with PID 26684 (C:\Users\lenne\fullstack_java\2dezit-LennertLinsen\2de-zit-LennertLinsen\backend-java\E-Commerce\wishlist-service\target\classes started by lenne in C:\Users\lenne\fullstack_java\2dezit-LennertLinsen\2de-zit-LennertLinsen\backend-java\E-Commerce)
+14:27:55.247 [main] INFO  b.p.s.WishlistServiceApplication - Starting WishlistServiceApplication using Java 17.0.1 with PID 26684 (C:\Users\lenne\fullstack_java\2dezit-LennertLinsen\2de-zit-LennertLinsen\backend-java\E-Commerce\wishlist-service\target\classes started by lenne in C:\Users\lenne\fullstack_java\2dezit-LennertLinsen\2de-zit-LennertLinsen\backend-java\E-Commerce)
+14:27:55.259 [main] INFO  b.p.s.WishlistServiceApplication - No active profile set, falling back to 1 default profile: "default"
+14:27:55.259 [main] INFO  b.p.s.WishlistServiceApplication - No active profile set, falling back to 1 default profile: "default"
+14:27:55.337 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+14:27:55.337 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=wishlist-service, profiles=[default], label=null, version=null, state=null
+14:27:56.515 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:27:56.713 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 189 ms. Found 1 JPA repository interfaces.
+14:27:57.114 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d44626bb-cb2a-38f8-ac95-0536aa43312d
+14:27:57.220 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'be.pxl.services.clients.CatalogueClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:27:57.679 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+14:27:57.693 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8085"]
+14:27:57.697 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:27:57.697 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+14:27:57.903 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:27:57.904 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2562 ms
+14:27:58.136 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:27:58.351 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+14:27:58.355 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+14:27:58.603 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+14:27:58.860 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14:27:58.885 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:27:59.085 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32298473
+14:27:59.087 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:27:59.119 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+14:27:59.482 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+14:28:00.493 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:28:00.599 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:28:01.103 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:28:01.204 [main] INFO  o.s.c.o.FeignClientFactoryBean - For 'catalogue-service' URL not provided. Will try picking an instance via load-balancing.
+14:28:03.607 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+14:28:03.664 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+14:28:05.224 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+14:28:05.272 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+14:28:05.340 [main] WARN  o.s.c.LocalVariableTableParameterNameDiscoverer - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+14:28:05.378 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+14:28:05.455 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+14:28:05.466 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:28:05.519 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+14:28:05.519 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+14:28:05.519 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+14:28:05.519 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+14:28:05.519 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+14:28:05.519 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+14:28:05.520 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+14:28:05.936 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+14:28:05.944 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+14:28:05.952 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+14:28:05.967 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1725452885967 with initial instances count: 4
+14:28:05.971 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application WISHLIST-SERVICE with eureka with status UP
+14:28:05.972 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1725452885972, current=UP, previous=STARTING]
+14:28:05.974 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8085"]
+14:28:05.975 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_WISHLIST-SERVICE/localhost:wishlist-service:8085: registering service...
+14:28:06.016 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+14:28:06.018 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8085
+14:28:06.055 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_WISHLIST-SERVICE/localhost:wishlist-service:8085 - registration status: 204
+14:28:07.778 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+14:28:07.792 [main] INFO  b.p.s.WishlistServiceApplication - Started WishlistServiceApplication in 16.169 seconds (process running for 18.285)
+14:28:07.792 [main] INFO  b.p.s.WishlistServiceApplication - Started WishlistServiceApplication in 16.169 seconds (process running for 18.285)
+14:33:05.528 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:38:05.534 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:39:46.870 [http-nio-8085-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:39:46.871 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:39:46.873 [http-nio-8085-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+14:39:46.913 [http-nio-8085-exec-1] INFO  b.p.s.services.WishlistService - A new wishlist is made by creating a new user.
+14:39:46.913 [http-nio-8085-exec-1] INFO  b.p.s.services.WishlistService - A new wishlist is made by creating a new user.
+14:40:54.777 [http-nio-8085-exec-3] INFO  b.p.s.services.WishlistService - Item with id: 3 is added to the wishlist of user with id: 1102
+14:40:54.777 [http-nio-8085-exec-3] INFO  b.p.s.services.WishlistService - Item with id: 3 is added to the wishlist of user with id: 1102
+14:40:56.581 [http-nio-8085-exec-4] INFO  b.p.s.services.WishlistService - Wishlist is being retrieved by userId: 1102
+14:40:56.581 [http-nio-8085-exec-4] INFO  b.p.s.services.WishlistService - Wishlist is being retrieved by userId: 1102

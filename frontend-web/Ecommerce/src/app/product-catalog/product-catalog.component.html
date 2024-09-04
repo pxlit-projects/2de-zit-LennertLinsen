@@ -1,0 +1,62 @@
+<div class="product-catalog">
+  <h1>Product Catalog</h1>
+
+  <!-- Filters and Search Bar -->
+  <div class="filters">
+    <div class="filter-group">
+      <label for="priceSort">Sort by Price:</label>
+      <select id="priceSort" (change)="onPriceSortChange($event)">
+        <option value="">Select...</option>
+        <option value="asc">Lowest to Highest</option>
+        <option value="desc">Highest to Lowest</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="categoryFilter">Filter by Category:</label>
+      <select id="categoryFilter" (change)="onCategoryFilterChange($event)">
+        <option value="">All Categories</option>
+        <option *ngFor="let category of categories" [value]="category.categoryId">
+          {{ category.categoryName }}
+        </option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label for="searchBar">Search by Name:</label>
+      <input
+        id="searchBar"
+        type="text"
+        (input)="onSearchChange($event)"
+        placeholder="Search products..."
+      />
+    </div>
+  </div>
+
+  <!-- Product Cards -->
+  <div class="products-grid">
+    <div class="product-card" *ngFor="let product of filteredProducts">
+      <!-- Product Image -->
+      <div class="product-image">
+        <img [src]="'https://via.placeholder.com/150x150?text=No+Image+Available'" alt="{{ product.productName }}" />
+      </div>
+
+      <h2>{{ product.productName }}</h2>
+      <p>Stock: {{ product.stock > 0 ? product.stock : 'Not in stock' }}</p>
+      <p>Price: ${{ product.price }}</p>
+
+      <!-- View Details Button -->
+      <button [routerLink]="['/products', product.id]">View Details</button>
+
+      <!-- Add to Cart Button -->
+      <button
+        (click)="addToCart(product)"
+        [disabled]="product.stock === 0"
+        [ngClass]="{'disabled': product.stock === 0}"
+      >
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</div>
+

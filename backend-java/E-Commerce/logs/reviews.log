@@ -1,0 +1,69 @@
+14:26:12.084 [main] INFO  b.p.s.ReviewsServiceApplication - Starting ReviewsServiceApplication using Java 17.0.1 with PID 5644 (C:\Users\lenne\fullstack_java\2dezit-LennertLinsen\2de-zit-LennertLinsen\backend-java\E-Commerce\review-service\target\classes started by lenne in C:\Users\lenne\fullstack_java\2dezit-LennertLinsen\2de-zit-LennertLinsen\backend-java\E-Commerce)
+14:26:12.084 [main] INFO  b.p.s.ReviewsServiceApplication - Starting ReviewsServiceApplication using Java 17.0.1 with PID 5644 (C:\Users\lenne\fullstack_java\2dezit-LennertLinsen\2de-zit-LennertLinsen\backend-java\E-Commerce\review-service\target\classes started by lenne in C:\Users\lenne\fullstack_java\2dezit-LennertLinsen\2de-zit-LennertLinsen\backend-java\E-Commerce)
+14:26:12.092 [main] INFO  b.p.s.ReviewsServiceApplication - No active profile set, falling back to 1 default profile: "default"
+14:26:12.092 [main] INFO  b.p.s.ReviewsServiceApplication - No active profile set, falling back to 1 default profile: "default"
+14:26:12.150 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+14:26:12.151 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=review-service, profiles=[default], label=null, version=null, state=null
+14:26:13.172 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:26:13.442 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 258 ms. Found 1 JPA repository interfaces.
+14:26:13.823 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a5c8e801-1976-3bf2-aa08-1f331739ae83
+14:26:14.397 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+14:26:14.409 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+14:26:14.411 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:26:14.411 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+14:26:14.591 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:26:14.591 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2438 ms
+14:26:14.817 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:26:15.001 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+14:26:15.008 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+14:26:15.475 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+14:26:15.842 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14:26:15.882 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:26:16.192 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@146add7b
+14:26:16.197 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:26:16.268 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+14:26:16.956 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+14:26:18.358 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:26:18.481 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:26:18.991 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:26:21.414 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+14:26:21.441 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+14:26:23.028 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+14:26:23.087 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+14:26:23.155 [main] WARN  o.s.c.LocalVariableTableParameterNameDiscoverer - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+14:26:23.188 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+14:26:23.285 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+14:26:23.294 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:26:23.355 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+14:26:23.355 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+14:26:23.355 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+14:26:23.355 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+14:26:23.355 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+14:26:23.355 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+14:26:23.355 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+14:26:23.764 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+14:26:23.772 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+14:26:23.778 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+14:26:23.790 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1725452783790 with initial instances count: 2
+14:26:23.792 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application REVIEW-SERVICE with eureka with status UP
+14:26:23.793 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1725452783793, current=UP, previous=STARTING]
+14:26:23.795 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_REVIEW-SERVICE/localhost:review-service:8083: registering service...
+14:26:23.796 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+14:26:23.824 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+14:26:23.825 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8083
+14:26:23.846 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_REVIEW-SERVICE/localhost:review-service:8083 - registration status: 204
+14:26:25.383 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+14:26:25.392 [main] INFO  b.p.s.ReviewsServiceApplication - Started ReviewsServiceApplication in 16.165 seconds (process running for 18.049)
+14:26:25.392 [main] INFO  b.p.s.ReviewsServiceApplication - Started ReviewsServiceApplication in 16.165 seconds (process running for 18.049)
+14:31:23.363 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:36:23.369 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:40:46.124 [http-nio-8083-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:40:46.126 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:40:46.130 [http-nio-8083-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+14:40:46.191 [http-nio-8083-exec-1] INFO  b.p.s.service.ProductReviewService - Retrieving all productreviews for the product with id: 3
+14:40:46.191 [http-nio-8083-exec-1] INFO  b.p.s.service.ProductReviewService - Retrieving all productreviews for the product with id: 3
+14:41:23.381 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:42:10.206 [http-nio-8083-exec-3] INFO  b.p.s.service.ProductReviewService - Retrieving all productreviews for the product with id: 2
+14:42:10.206 [http-nio-8083-exec-3] INFO  b.p.s.service.ProductReviewService - Retrieving all productreviews for the product with id: 2
+14:42:14.186 [http-nio-8083-exec-4] INFO  b.p.s.service.ProductReviewService - Retrieving all productreviews for the supplier: Pink Lady
+14:42:14.186 [http-nio-8083-exec-4] INFO  b.p.s.service.ProductReviewService - Retrieving all productreviews for the supplier: Pink Lady

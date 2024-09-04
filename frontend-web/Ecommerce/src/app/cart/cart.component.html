@@ -1,0 +1,28 @@
+<div class="cart-wrapper">
+  <div *ngIf="cart && cart.cartItems.length > 0" class="cart-container">
+    <h1>Your Cart</h1>
+    <div class="cart-item" *ngFor="let item of cart.cartItems">
+      <div class="cart-item-details">
+        <h3>{{ getProductName(item.productId) }}</h3>
+        <p>Price: ${{ getProductPrice(item.productId) }}</p>
+        <p>Quantity: {{ item.amount }}</p>
+      </div>
+      <div class="cart-item-actions">
+        <button (click)="addItem(item.productId)">Add More</button>
+        <button (click)="removeItem(item.productId)">Remove</button>
+      </div>
+    </div>
+    <button class="back-button" (click)="goBack()">Back to Catalog</button>
+  </div>
+
+  <div *ngIf="cart && cart.cartItems.length > 0" class="order-summary">
+    <h2>Order Summary</h2>
+    <p><strong>Total Price:</strong> ${{ getFormattedTotalPrice() }}</p>
+    <button class="create-order-button" (click)="createOrder()">Create Order</button>
+  </div>
+
+  <div *ngIf="cart && cart.cartItems.length === 0" class="empty-cart">
+    <p>Your cart is empty!</p>
+    <button class="back-button" (click)="goBack()">Back to Catalog</button>
+  </div>
+</div>

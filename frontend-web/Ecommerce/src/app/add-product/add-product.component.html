@@ -1,0 +1,56 @@
+<div class="add-product-container">
+  <h1 class="form-title">Add New Product</h1>
+  <div class="form-card">
+    <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+      <!-- Product Name -->
+      <div class="form-group">
+        <label for="productName" class="form-label">Product Name:</label>
+        <input id="productName" class="form-input" formControlName="productName" placeholder="Enter product name" />
+      </div>
+
+      <!-- Description -->
+      <div class="form-group">
+        <label for="description" class="form-label">Description:</label>
+        <textarea
+          id="description"
+          class="form-input"
+          formControlName="description"
+          placeholder="Enter product description"
+        ></textarea>
+      </div>
+
+      <!-- Stock -->
+      <div class="form-group">
+        <label for="stock" class="form-label">Stock:</label>
+        <input id="stock" type="number" class="form-input" formControlName="stock" placeholder="Enter stock quantity" />
+      </div>
+
+      <!-- Price -->
+      <div class="form-group">
+        <label for="price" class="form-label">Price:</label>
+        <input id="price" type="number" class="form-input" formControlName="price" placeholder="Enter product price" />
+      </div>
+
+      <!-- Category -->
+      <div class="form-group">
+        <label for="categoryId" class="form-label">Category:</label>
+        <select id="categoryId" class="form-input" formControlName="categoryId">
+          <option *ngFor="let category of categories" [value]="category.categoryId">
+            {{ category.categoryName }}
+          </option>
+        </select>
+      </div>
+
+      <!-- Supplier -->
+      <div class="form-group">
+        <label for="supplier" class="form-label">Supplier:</label>
+        <input id="supplier" class="form-input" formControlName="supplier" placeholder="Enter supplier name" />
+      </div>
+
+      <!-- Submit Button -->
+      <div class="form-group">
+        <button type="submit" class="submit-button">Add Product</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="admin-page">
+  <h1>Admin - Product List</h1>
+  <button routerLink="/add-product" class="add-product-button">Add Product</button>
+  <table class="product-table">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Product Name</th>
+      <th>Description</th>
+      <th>Stock</th>
+      <th>Price</th>
+      <th>Category Name</th>
+      <th>Supplier</th>
+      <th>Wishlisted</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.id }}</td>
+      <td>{{ product.productName }}</td>
+      <td>{{ product.description }}</td>
+      <td>{{ product.stock }}</td>
+      <td>{{ product.price | currency }}</td>
+      <td>{{ product.categoryName }}</td>
+      <td>{{ product.supplier }}</td>
+      <td>{{ product.wishlisted }}</td>
+      <td class="action-buttons">
+        <!-- Edit Button -->
+        <button class="edit-button" [routerLink]="['/edit-product', product.id]">Edit</button>
+
+        <!-- Delete Button -->
+        <button class="delete-button" (click)="deleteProduct(product.id)">Delete</button>
+
+        <!-- Refill Button and Input -->
+        <input type="number" class="refill-input" [(ngModel)]="refillQuantity[product.id]" placeholder="Qty" min="1">
+        <button class="refill-button" (click)="refillStock(product.id)">Refill</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

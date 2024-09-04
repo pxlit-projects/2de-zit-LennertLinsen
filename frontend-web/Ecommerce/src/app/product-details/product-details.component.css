@@ -1,0 +1,170 @@
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.product-image {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 20px;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-info {
+  flex: 2;
+}
+
+.product-name {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.product-price {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-stock {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.product-category, .product-supplier, .product-wishlist {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.product-info button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.wishlist-button {
+  background-color: #ffeb3b;
+  color: #333;
+}
+
+.cart-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.back-button {
+  background-color: #2196f3;
+  color: white;
+}
+
+button.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.product-info button:disabled {
+  opacity: 0.6;
+}
+
+/* Reviews Section */
+.reviews-section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.reviews-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.review-card {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.review-card:last-child {
+  border-bottom: none;
+}
+
+.review-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.review-description {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.review-stars {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.review-time {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.review-supplier {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input, form textarea, form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+form button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}

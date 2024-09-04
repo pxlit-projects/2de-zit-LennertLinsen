@@ -1,0 +1,4 @@
+14:21:54.359 [main] INFO  b.p.s.ConfigServiceApplication - Starting ConfigServiceApplication using Java 17.0.1 with PID 21248 (C:\Users\lenne\fullstack_java\2dezit-LennertLinsen\2de-zit-LennertLinsen\backend-java\E-Commerce\config-service\target\classes started by lenne in C:\Users\lenne\fullstack_java\2dezit-LennertLinsen\2de-zit-LennertLinsen\backend-java\E-Commerce)
+14:21:54.370 [main] DEBUG b.p.s.ConfigServiceApplication - Running with Spring Boot v3.1.4, Spring v6.0.12
+14:21:54.371 [main] INFO  b.p.s.ConfigServiceApplication - The following 1 profile is active: "native"
+14:22:02.430 [main] INFO  b.p.s.ConfigServiceApplication - Started ConfigServiceApplication in 10.361 seconds (process running for 12.309)

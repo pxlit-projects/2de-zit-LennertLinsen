@@ -1,0 +1,59 @@
+server:
+  port: 8089
+
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedMethods:
+              - "*"
+            allowedHeaders:
+              - "*"
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: catalogue-service
+          uri: lb://catalogue-service
+          predicates:
+            - Path=/catalogue/**
+          filters:
+            - RewritePath=/catalogue/(?<path>.*), /$\{path}
+        - id: wishlist-service
+          uri: lb://wishlist-service
+          predicates:
+            - Path=/wishlist/**
+          filters:
+            - RewritePath=/wishlist/(?<path>.*), /$\{path}
+        - id: review-service
+          uri: lb://review-service
+          predicates:
+            - Path=/review/**
+          filters:
+            - RewritePath=/review/(?<path>.*), /$\{path}
+        - id: shoppingcart-service
+          uri: lb://shoppingcart-service
+          predicates:
+            - Path=/shoppingcart/**
+          filters:
+            - RewritePath=/shoppingcart/(?<path>.*), /$\{path}
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/users/**
+          filters:
+            - RewritePath=/users/(?<path>.*), /$\{path}
+main:
+  web-application-type: reactive
+application:
+  name: gateway-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8061/eureka/
+    registry-fetch-interval-seconds: 5

@@ -1,0 +1,91 @@
+/* Existing styles */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: lightgray;
+  color: limegreen;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Aligns content to both ends */
+}
+
+.logo-and-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-content img {
+  max-width: 50px;
+  margin-right: 15px;
+}
+
+.header-content h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+/* Updated button styles for larger size */
+button {
+  padding: 0.75rem 1.5rem; /* Increased padding for larger button */
+  border: none;
+  border-radius: 8px; /* Slightly larger radius for a more rounded appearance */
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem; /* Increased font size */
+  font-weight: bold; /* Make text bold */
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.7; /* Makes the button faded when disabled */
+}
+
+/* Router Outlet Styles */
+.router-outlet {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: lightgray;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}

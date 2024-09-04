@@ -1,0 +1,76 @@
+14:26:40.068 [main] INFO  b.p.s.ShoppingcartServiceApplication - Starting ShoppingcartServiceApplication using Java 17.0.1 with PID 15436 (C:\Users\lenne\fullstack_java\2dezit-LennertLinsen\2de-zit-LennertLinsen\backend-java\E-Commerce\shoppingcart-service\target\classes started by lenne in C:\Users\lenne\fullstack_java\2dezit-LennertLinsen\2de-zit-LennertLinsen\backend-java\E-Commerce)
+14:26:40.068 [main] INFO  b.p.s.ShoppingcartServiceApplication - Starting ShoppingcartServiceApplication using Java 17.0.1 with PID 15436 (C:\Users\lenne\fullstack_java\2dezit-LennertLinsen\2de-zit-LennertLinsen\backend-java\E-Commerce\shoppingcart-service\target\classes started by lenne in C:\Users\lenne\fullstack_java\2dezit-LennertLinsen\2de-zit-LennertLinsen\backend-java\E-Commerce)
+14:26:40.077 [main] INFO  b.p.s.ShoppingcartServiceApplication - No active profile set, falling back to 1 default profile: "default"
+14:26:40.077 [main] INFO  b.p.s.ShoppingcartServiceApplication - No active profile set, falling back to 1 default profile: "default"
+14:26:40.156 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+14:26:40.156 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=shoppingcart-service, profiles=[default], label=null, version=null, state=null
+14:26:41.630 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:26:41.958 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 314 ms. Found 4 JPA repository interfaces.
+14:26:42.474 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4f1d947d-df3d-39c7-b2bc-dcefb0f8dfdf
+14:26:42.628 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'be.pxl.services.client.CatalogueClient' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:26:43.131 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+14:26:43.145 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+14:26:43.148 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:26:43.148 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+14:26:43.359 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:26:43.360 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3200 ms
+14:26:43.656 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14:26:43.770 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.9.Final
+14:26:43.774 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+14:26:44.021 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+14:26:44.298 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14:26:44.322 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14:26:44.527 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@523ade68
+14:26:44.529 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14:26:44.568 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+14:26:44.979 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+14:26:46.130 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:26:46.322 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:26:47.160 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:26:47.278 [main] INFO  o.s.c.o.FeignClientFactoryBean - For 'catalogue-service' URL not provided. Will try picking an instance via load-balancing.
+14:26:49.476 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+14:26:49.517 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+14:26:51.097 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+14:26:51.141 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+14:26:51.189 [main] WARN  o.s.c.LocalVariableTableParameterNameDiscoverer - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: org.springframework.amqp.rabbit.core.RabbitAdmin
+14:26:51.229 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+14:26:51.306 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+14:26:51.313 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:26:51.365 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+14:26:51.365 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+14:26:51.365 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+14:26:51.365 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+14:26:51.365 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+14:26:51.366 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+14:26:51.366 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+14:26:51.627 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+14:26:51.636 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+14:26:51.641 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+14:26:51.654 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1725452811653 with initial instances count: 3
+14:26:51.656 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application SHOPPINGCART-SERVICE with eureka with status UP
+14:26:51.657 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1725452811657, current=UP, previous=STARTING]
+14:26:51.660 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+14:26:51.661 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SHOPPINGCART-SERVICE/localhost:shoppingcart-service:8081: registering service...
+14:26:51.704 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+14:26:51.705 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8081
+14:26:51.736 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_SHOPPINGCART-SERVICE/localhost:shoppingcart-service:8081 - registration status: 204
+14:26:53.382 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+14:26:53.396 [main] INFO  b.p.s.ShoppingcartServiceApplication - Started ShoppingcartServiceApplication in 16.206 seconds (process running for 17.848)
+14:26:53.396 [main] INFO  b.p.s.ShoppingcartServiceApplication - Started ShoppingcartServiceApplication in 16.206 seconds (process running for 17.848)
+14:31:51.378 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:36:51.382 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:39:46.510 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:39:46.511 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:39:46.513 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+14:39:46.570 [http-nio-8081-exec-1] INFO  be.pxl.services.service.CartService - adding new cart 1102
+14:39:46.570 [http-nio-8081-exec-1] INFO  be.pxl.services.service.CartService - adding new cart 1102
+14:41:00.776 [http-nio-8081-exec-3] INFO  be.pxl.services.service.CartService - Adding item to cart 1102 with productId: 3
+14:41:00.776 [http-nio-8081-exec-3] INFO  be.pxl.services.service.CartService - Adding item to cart 1102 with productId: 3
+14:41:00.906 [http-nio-8081-exec-3] INFO  be.pxl.services.service.CartService - Item doesn't exist in cart yet, so a new one is added.
+14:41:00.906 [http-nio-8081-exec-3] INFO  be.pxl.services.service.CartService - Item doesn't exist in cart yet, so a new one is added.
+14:41:02.870 [http-nio-8081-exec-4] INFO  be.pxl.services.service.CartService - Retrieving cart by id: 1102
+14:41:02.870 [http-nio-8081-exec-4] INFO  be.pxl.services.service.CartService - Retrieving cart by id: 1102
+14:41:05.463 [http-nio-8081-exec-5] INFO  b.pxl.services.service.OrderService - A new order is being created and the cart is being emptied.
+14:41:05.463 [http-nio-8081-exec-5] INFO  b.pxl.services.service.OrderService - A new order is being created and the cart is being emptied.
+14:41:07.367 [http-nio-8081-exec-6] INFO  be.pxl.services.service.CartService - Retrieving cart by id: 1102
+14:41:07.367 [http-nio-8081-exec-6] INFO  be.pxl.services.service.CartService - Retrieving cart by id: 1102

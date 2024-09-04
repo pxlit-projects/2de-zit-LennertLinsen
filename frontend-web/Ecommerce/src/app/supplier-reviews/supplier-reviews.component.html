@@ -1,0 +1,28 @@
+<div class="supplier-reviews-page">
+  <!-- Loading and Error Messages -->
+  <div *ngIf="loading" class="loading-spinner">Loading reviews...</div>
+  <div *ngIf="error" class="error-message">{{ error }}</div>
+
+  <!-- Supplier Reviews Section -->
+  <div *ngIf="!loading && !error">
+    <div class="reviews-section">
+      <h2 class="section-title">Reviews for Supplier: {{ supplier }}</h2>
+
+      <div *ngIf="reviews.length > 0; else noReviews" class="reviews-list">
+        <div *ngFor="let review of reviews" class="review-card">
+          <div class="review-info">
+            <h3 class="review-title">{{ review.title }}</h3>
+            <p class="review-description">{{ review.description }}</p>
+            <p class="review-stars">Rating: {{ review.stars }} stars</p>
+            <p class="review-time">Reviewed on: {{ review.reviewTime | date: 'short' }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- No Reviews Template -->
+      <ng-template #noReviews>
+        <p>No reviews available for this supplier.</p>
+      </ng-template>
+    </div>
+  </div>
+</div>

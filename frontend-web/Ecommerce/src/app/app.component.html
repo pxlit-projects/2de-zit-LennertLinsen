@@ -1,0 +1,27 @@
+<app-custom-notification
+  [message]="notificationMessage"
+  [visible]="showNotification"
+  (closed)="onNotificationClosed()">
+</app-custom-notification>
+
+<!-- Your other component content -->
+
+<div class="app-container">
+  <header>
+    <div class="header-content">
+      <div class="logo-and-title">
+        <img src="assets/green-shopping-cart-icon-5.png" alt="Logo">
+        <h1>grEen-commerce</h1>
+      </div>
+      <div class="header-buttons">
+        <button class="wishlist-button" [disabled]="isLoginPage || isRegisterPage || isAdminPage || isAddProductPage || isEditProductPage" (click)="goToWishlist()">Wishlist</button>
+        <button class="cart-button" [disabled]="isLoginPage || isRegisterPage || isAdminPage || isAddProductPage || isEditProductPage" (click)="goToCart()">Cart</button>
+      </div>
+    </div>
+  </header>
+  <div class="router-outlet">
+    <router-outlet></router-outlet>
+  </div>
+  <footer>2024 Lennert Linsen</footer>
+</div>
+

@@ -1,0 +1,88 @@
+14:23:31.688 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+14:23:31.798 [main] INFO  b.p.s.GatewayServiceApplication - Starting GatewayServiceApplication using Java 17.0.1 with PID 35244 (C:\Users\lenne\fullstack_java\2dezit-LennertLinsen\2de-zit-LennertLinsen\backend-java\E-Commerce\gateway-service\target\classes started by lenne in C:\Users\lenne\fullstack_java\2dezit-LennertLinsen\2de-zit-LennertLinsen\backend-java\E-Commerce)
+14:23:31.798 [main] INFO  b.p.s.GatewayServiceApplication - Starting GatewayServiceApplication using Java 17.0.1 with PID 35244 (C:\Users\lenne\fullstack_java\2dezit-LennertLinsen\2de-zit-LennertLinsen\backend-java\E-Commerce\gateway-service\target\classes started by lenne in C:\Users\lenne\fullstack_java\2dezit-LennertLinsen\2de-zit-LennertLinsen\backend-java\E-Commerce)
+14:23:31.800 [main] INFO  b.p.s.GatewayServiceApplication - No active profile set, falling back to 1 default profile: "default"
+14:23:31.800 [main] INFO  b.p.s.GatewayServiceApplication - No active profile set, falling back to 1 default profile: "default"
+14:23:31.916 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8088/
+14:23:31.916 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=gateway-service, profiles=[default], label=null, version=null, state=null
+14:23:33.524 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=9206eef4-b4a1-3e3e-a50c-9d170f6f0a6f
+14:23:33.593 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:23:33.594 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:23:33.595 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+14:23:35.797 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+14:23:38.107 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+14:23:39.006 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [After]
+14:23:39.007 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Before]
+14:23:39.008 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Between]
+14:23:39.008 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Cookie]
+14:23:39.008 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Header]
+14:23:39.008 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Host]
+14:23:39.008 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Method]
+14:23:39.008 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Path]
+14:23:39.009 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Query]
+14:23:39.009 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [ReadBody]
+14:23:39.009 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [RemoteAddr]
+14:23:39.009 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+14:23:39.010 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [Weight]
+14:23:39.010 [main] INFO  o.s.c.g.r.RouteDefinitionRouteLocator - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+14:23:39.523 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+14:23:41.114 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+14:23:41.163 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+14:23:41.225 [main] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+14:23:41.299 [main] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+14:23:41.307 [main] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:23:41.377 [main] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+14:23:41.377 [main] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+14:23:41.378 [main] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+14:23:41.378 [main] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+14:23:41.378 [main] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+14:23:41.378 [main] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+14:23:41.378 [main] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+14:23:42.009 [main] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+14:23:42.018 [main] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+14:23:42.026 [main] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+14:23:42.044 [main] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1725452622044 with initial instances count: 0
+14:23:42.046 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application GATEWAY-SERVICE with eureka with status UP
+14:23:42.047 [main] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1725452622047, current=UP, previous=STARTING]
+14:23:42.049 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/localhost:gateway-service:8089: registering service...
+14:23:42.167 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_GATEWAY-SERVICE/localhost:gateway-service:8089 - registration status: 204
+14:23:42.481 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port 8089
+14:23:42.482 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8089
+14:23:44.391 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+14:23:45.960 [main] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+14:23:45.985 [main] INFO  b.p.s.GatewayServiceApplication - Started GatewayServiceApplication in 17.991 seconds (process running for 20.051)
+14:23:45.985 [main] INFO  b.p.s.GatewayServiceApplication - Started GatewayServiceApplication in 17.991 seconds (process running for 20.051)
+14:23:47.031 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+14:23:47.031 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+14:23:47.031 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+14:23:47.031 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+14:23:47.031 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+14:23:47.031 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+14:23:47.031 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+14:23:47.038 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+14:23:52.047 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+14:23:52.048 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+14:23:52.048 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+14:23:52.048 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+14:23:52.048 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+14:23:52.048 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+14:23:52.048 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+14:23:52.058 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+14:23:57.075 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+14:23:57.075 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+14:23:57.076 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+14:23:57.076 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+14:23:57.076 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+14:23:57.076 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+14:23:57.076 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+14:23:57.081 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+14:24:02.095 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+14:24:02.096 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+14:24:02.096 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+14:24:02.096 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+14:24:02.096 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+14:24:02.096 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+14:24:02.096 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+14:24:02.108 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+14:28:41.394 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+14:33:41.410 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

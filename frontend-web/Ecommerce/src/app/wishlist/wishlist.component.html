@@ -1,0 +1,17 @@
+<div class="wishlist-container">
+  <div class="wishlist-content">
+    <h1>My Wishlist</h1>
+    <button class="back-button" (click)="goBackToCatalog()">Back to Catalog</button>
+    <div class="wishlist-item" *ngFor="let item of wishlistItems">
+      <div class="wishlist-details">
+        <h2>{{ item.productName }}</h2>
+        <p>Stock: {{ item.stock }}</p>
+        <p>Price: ${{ item.price }}</p>
+      </div>
+      <div class="wishlist-actions">
+        <button (click)="addToCart(item)">Add to Cart</button>
+        <button (click)="removeFromWishlist(item)">Remove</button>
+      </div>
+    </div>
+  </div>
+</div>
